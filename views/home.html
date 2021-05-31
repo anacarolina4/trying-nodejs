@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="sortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="sortcut icon" href="inspect3/logo.png" type="image/gif">
+    <link rel="stylesheet" href="inspect3/styleHome.css" type="text/css">
+    <script src="inspect3/scriptHome.js"></script>
+</head>
+<body>
+    
+    <div class="dark-mode">
+        DARK MODE<input id="btn" type="checkbox" name="dark">
+        <label id="dark-button" for="btn"></label>
+    </div>
+
+    <header>
+        <div class="center">
+            <div class="logo">
+                <h2>Welcome to the home</h2>
+            </div>
+
+            <div class="menu-desktop">
+                <ul>
+                    <li><a href="game-menu.html">Game library</a></li>
+                    <li><a href="inspect3/load.bat">Coming soon...</a></li>
+                    <li><a onclick="credits()" href="#">Credits</a></li>
+                </ul>
+            </div> <!-- Desktop -->
+        </div> <!-- Center -->
+    </header>
+
+    <embed id="player-tutorial" src="inspect3/tutorial.mp4"> 
+
+    <div id="text-tutorial">
+        <p>HOW TO PLAY:
+            <br><br>
+            W, A, S, D = moves 
+            <br>
+            SHIFT + moves = speed up
+            <br>  
+            F = clean draw
+        </p>
+
+    </div>
+
+
+    <script>
+
+        window.addEventListener("change", darkMode);
+
+        function credits() {
+            alert("Credits: \n\n https://github.com/anacarolina4 \n https://twitter.com/Ana___Carolina2 \n https://www.youtube.com/channel/UCuKlYf_ZTyiUJbCtuoxcapg");
+        }
+
+    </script>
+</body>
+</html>

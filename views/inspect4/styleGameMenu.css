@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3a47ff;
+    color: #FFF;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    transition: background 0.5s linear, color 0.5s linear;   
+}
+
+h2 {
+    color: #00F;
+    font-weight: bold;
+    padding: 10px;   
+    font-family: "Poppins", sans-serif; 
+}
+
+.links li a {
+    color: #4DD;
+    font-weight: bold;    
+    font-family: "Poppins", sans-serif;
+}
+
+#game {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#game button { 
+    background-color: #12F; 
+    color: #4DD; 
+    border: none; 
+    font-size: 2rem; 
+    width:30%; 
+    padding: 1rem; 
+    font-weight: bold; 
+    font-family: "Poppins", sans-serif; 
+}
+
+#game button:hover {
+    background-color: #FFF; 
+    color: #4DD; 
+    border: none; 
+    cursor: pointer; 
+    font-size: 2rem; 
+    font-weight: bold; 
+    padding: 1rem; 
+    width: 30%; 
+}
+
+/* credits by ana */
+
+#credits-ana { 
+    color: #333;
+    font-size: 1rem; 
+    font-weight: bold; 
+    font-family: "Poppins", sans-serif;
+    transition: background 0.5s linear, color 0.5s linear;  
+}
+
+#credits-ana:hover {
+    color: #00F;
+    font-size: 1rem; 
+    font-weight: bold; 
+    font-family: "Poppins", sans-serif;
+    transition: background 0.5s linear;
+}
+
+/* func darkMode */ 
+body.dark {
+    background-color: #111;
+    color: #FFF;
+}
+
+body.dark label {
+    background-color: #FFF;
+}
+
+.dark-mode {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+#dark-button {
+    background-color: #000;
+    border-radius: 40%;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.5s linear;
+}
+
+input {
+    visibility: hidden;
+}

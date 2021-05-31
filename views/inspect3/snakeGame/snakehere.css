@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3a47ff;
+    color: #FFF;
+    font-family: "Poppins", sans-serif;
+    transition: background 0.5s linear, color 0.5s linear;   
+}
+
+canvas {
+    display: flex;
+    margin: 0 auto;
+}
+
+#tutorial {
+    display: flex;
+    padding: 1rem;
+    color: #FFF;
+}
+
+/* func darkMode */ 
+body.dark {
+    background-color: #111;
+    color: #FFF;
+}
+
+body.dark label {
+    background-color: #FFF;
+}
+
+.dark-mode {
+    font-family: "Poppins", sans-serif;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+#dark-button {
+    background-color: #000;
+    border-radius: 40%;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.5s linear;
+}
+
+input {
+    visibility: hidden;
+}

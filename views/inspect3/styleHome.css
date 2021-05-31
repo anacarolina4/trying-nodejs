@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3a47ff;
+    color: #FFF;
+    font-family: "Poppins", sans-serif;
+    transition: background 0.5s linear, color 0.5s linear;   
+}
+
+.center {
+    max-width: 950px;
+    padding: 0 2%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    background-color: #2A30EE;
+    padding: 10px 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.logo {
+    color: #FFF;
+    width: 50%;
+}
+
+.menu-desktop {
+    width: 50%;    
+}
+
+.menu-desktop ul li {
+    display: inline-block;
+    margin: 8px 10px;
+}
+
+.menu-desktop ul li a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-desktop {
+        display: none;
+    }  
+}
+
+#player-tutorial {
+    width: 1280px;
+    height: 720px;
+    display: flex;    
+}
+
+#text-tutorial {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    position: absolute;
+    top: 100px;
+    right: 300px;
+}
+
+/* func darkMode */ 
+body.dark {
+    background-color: #111;
+    color: #FFF;
+}
+
+body.dark label {
+    background-color: #FFF;
+}
+
+.dark-mode {
+    font-family: "Poppins", sans-serif;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+#dark-button {
+    background-color: #000;
+    border-radius: 40%;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.5s linear;
+}
+
+input {
+    visibility: hidden;
+}

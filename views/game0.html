@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draw with player</title>
+    <link rel="sortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="sortcut icon" href="inspect1/logo.png" type="image/gif">
+    <link rel="stylesheet" type="text/css" href="inspect1/styleSobre.css">
+    <script src="inspect1/scriptSobre.js"></script>
+</head>
+<body>
+
+    <div class="game">
+
+        <div class="cleaner">           
+            <input id="clean" type="button" value="Draw cleaner" onclick="clearFunc(clean)">
+        </div>
+
+        <div class="colors">
+            RED<input id="red" type="checkbox"> 
+            GREEN<input id="green" type="checkbox">
+            BLUE<input id="blue" type="checkbox">
+        </div>
+
+
+        <canvas width="1280" height="720"></canvas>
+        <script>
+            var cnv = document.querySelector("canvas");
+            var ctx = cnv.getContext("2d");
+            var p1 = {
+                x : 20,
+                y : 20
+            }
+            var p2 = {
+                x : 100,
+                y : 100
+            }
+
+            update();
+
+            window.addEventListener("keydown", keydownHandler);
+            window.addEventListener("keyup", keyupHandler);
+
+        </script>
+
+        <audio src="inspect1/backlofi.mp3" muted autoplay></audio>
+    </div> 
+     
+</body>
+</html>

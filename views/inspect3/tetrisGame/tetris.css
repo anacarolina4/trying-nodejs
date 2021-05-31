@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://pbs.twimg.com/profile_images/1370528678350893060/BUSkxdrN.jpg);
+    background-color: #3a47ff;
+    color: #FFF;
+    font-family: "Poppins", sans-serif;
+    transition: background 0.5s linear, color 0.5s linear;   
+}
+
+#score{
+    display: inline-block;
+}
+div{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+}
+canvas{
+    display: block;
+    margin:0 auto;
+}
+
+/* func darkMode */ 
+body.dark {
+    background-color: #111;
+    color: #FFF;
+}
+
+body.dark label {
+    background-color: #FFF;
+}
+
+.dark-mode {
+    font-family: "Poppins", sans-serif;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+#dark-button {
+    background-color: #000;
+    border-radius: 40%;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.5s linear;
+}
+
+input {
+    visibility: hidden;
+}

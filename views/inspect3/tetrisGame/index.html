@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris Game JS</title>
+    <link rel="sortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="sortcut icon" type="image/gif" href="logo.png">
+    <link rel="stylesheet" type="text/css" href="tetris.css">
+    <script src="tetrominoes.js" defer></script>
+    <script src="tetris.js" defer></script>
+</head>
+<body>
+
+    <div class="dark-mode">
+        DARK MODE<input id="btn" type="checkbox" name="dark">
+        <label id="dark-button" for="btn"></label>
+    </div>
+
+   <div>This game was created by <a target="_blank" href="https://twitter.com/Ana___Carolina2">Ana</a></div><br>
+    <canvas id="tetris" width="200" height="400"></canvas>
+    <div>
+        Score : <div id="score">0</div>
+    </div>
+ 
+    <script>
+
+        window.addEventListener("change", darkMode);
+        function darkMode(e) {
+            alert("MLK TU É SÓ UM PLEB COM PRIME <3");
+        }
+
+    </script>
+</body>
+</html>

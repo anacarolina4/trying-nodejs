@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="sortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="sortcut icon" type="image/gif" href="inspect4/logo.png">
+    <link rel="stylesheet" type="text/css" href="inspect4/styleGameMenu.css">
+    <script src="inspect4/scriptGameMenu.js"></script>
+</head>
+<body>
+
+    <div class="dark-mode">
+        DARK MODE<input id="btn" type="checkbox" name="dark">
+        <label id="dark-button" for="btn"></label>
+    </div>
+
+    <div class="main-content">
+        <div class="logo">
+            <h2>Welcome, this is your game library</h2>
+        </div>
+    
+
+        <div class="library">
+            
+            <ul class="links">
+                <div id="games-text">Game library</div>
+                <br>
+                <li><a id="test" href="game0.html">Draw (with player)</a></li>
+                <li><a href="game1.html">Draw (with mouse)</a></li>
+                <li><a href="inspect3/snakeGame/Snake.html">Snake game</a></li>
+                <li><a href="inspect3/tetrisGame/index.html">Tetris</a></li>
+                <li><a href="https://www.epicgames.com/store/pt-BR/p/among-us">KINDA SUUS</a></li>
+                <li><a href="home.html">Back to home</a></li>
+                <br>
+                <br>
+                <li><a id="credits-ana" onclick="credits()">Credits</a></li>
+            </ul>
+        </div> <!-- Library -->
+    </div> <!-- Main content -->
+
+    <div id="game">      
+        <button onclick="playGame()">Play</button>
+    </div>
+
+    <script>
+
+        window.addEventListener("change", darkMode);
+
+        function credits() {
+            alert("Credits: \n\n https://github.com/anacarolina4 \n https://twitter.com/Ana___Carolina2 \n https://www.youtube.com/channel/UCuKlYf_ZTyiUJbCtuoxcapg");
+        }
+
+    </script>
+</body>
+</html>

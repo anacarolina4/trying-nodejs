@@ -1,0 +1,38 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Snake game in JS</title>
+    <link rel="sortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="sortcut icon" type="image/gif" href="data:image/png;base64,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">
+    <link rel="stylesheet" type="text/css" media="screen" href="snakehere.css">
+    <script src="snake.js" defer></script>
+</head>
+<body>
+
+    <div id="tutorial">
+        <p>
+            HOW TO PLAY:
+            <br><br>
+            arrow keys = moves
+        </p>
+    </div>
+
+    <div class="dark-mode">
+        DARK MODE<input id="btn" type="checkbox" name="dark">
+        <label id="dark-button" for="btn"></label>
+    </div>
+
+    <canvas id="snake" width="608" height="608"></canvas>
+
+    
+    <script>
+
+        window.addEventListener("change", darkMode);
+        function darkMode(e) {
+            document.body.classList.toggle("dark", e.target.checked);
+        }
+
+    </script>
+</body>
+</html>

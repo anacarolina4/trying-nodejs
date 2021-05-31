@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draw with mouse</title>
+    <link rel="sortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="sortcut icon" type="image/gif" href="inspect2/logo.png">
+    <link rel="stylesheet" type="text/css" href="inspect2/styleGame1.css">
+    <script src="inspect2/scriptGame1.js"></script>
+</head>
+<body>
+    <div class="main-project">
+
+        <div class="cleaner">           
+            <input id="clean" type="button" value="Draw cleaner" onclick="clearFunc(clean)">
+        </div>
+
+        <div class="colors">
+            RED<input id="red" type="checkbox"> 
+            GREEN<input id="green" type="checkbox">
+            BLUE<input id="blue" type="checkbox">
+        </div>
+
+
+        <canvas width="1280" height="720"></canvas>
+        <script>
+            var cnv = document.querySelector("canvas");
+            var ctx = cnv.getContext("2d");
+            var pos = { 
+                x: 0, 
+                y: 0 
+            }
+
+            update();
+
+            window.addEventListener("keydown", keydownHandler);
+            window.addEventListener("resize", resize);
+            window.addEventListener("mousemove", draw);
+            window.addEventListener("mousedown", setPosition);
+            window.addEventListener("mouseenter", setPosition);
+            
+
+        </script>
+    </div>
+
+</body>
+</html>
